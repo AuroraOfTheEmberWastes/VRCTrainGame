@@ -11,12 +11,6 @@
     },
     "vrchat.jordo.easyquestswitch": {
       "version": "1.4.0"
-    },
-    "com.mmmaellon.smartobjectsync": {
-      "version": "3.10.15"
-    },
-    "com.mmmaellon.real-fake-doors": {
-      "version": "1.5.3"
     }
   },
   "locked": {
@@ -37,19 +31,6 @@
     "vrchat.jordo.easyquestswitch": {
       "version": "1.4.0",
       "dependencies": {}
-    },
-    "com.mmmaellon.smartobjectsync": {
-      "version": "3.10.15",
-      "dependencies": {
-        "com.vrchat.worlds": "^3.4.0"
-      }
-    },
-    "com.mmmaellon.real-fake-doors": {
-      "version": "1.5.3",
-      "dependencies": {
-        "com.vrchat.worlds": "^3.2.0",
-        "com.mmmaellon.smartobjectsync": ">3.0.0"
-      }
     }
   }
 }
