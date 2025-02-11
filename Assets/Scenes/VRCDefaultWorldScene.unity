@@ -2139,6 +2139,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 350701269}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &357747194 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7346223566334291270, guid: 96bfaef88a9ea424f9310dc13b352a1a,
+    type: 3}
+  m_PrefabInstance: {fileID: 8877358186251300593}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &358170787
 GameObject:
   m_ObjectHideFlags: 0
@@ -6089,6 +6095,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1073875483 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6745311626862651164, guid: 4571460bcde10374ca1bdc47003d8cfc,
+    type: 3}
+  m_PrefabInstance: {fileID: 6861054776568140076}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1078545084
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9989,6 +10001,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1875083557}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1593885063 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 571878875018217722, guid: 5b9075c9081690e40bceff5f8bad225d,
+    type: 3}
+  m_PrefabInstance: {fileID: 4948312337681865572}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1600818066
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10273,6 +10291,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
   m_Center: {x: 0, y: 0.49999997, z: 0}
+--- !u!1 &1643730896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3160840798015971818, guid: 99046e05aec5f694da6cc00766e70da0,
+    type: 3}
+  m_PrefabInstance: {fileID: 496408240044070569}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1662557198
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10445,6 +10469,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 98b228ca464e8a94ea1cdab668b75c2e,
     type: 3}
   m_PrefabInstance: {fileID: 195274944}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1689307959 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4813522028972256019, guid: ee048a9e21cdae94296a3ac2eea24b42,
+    type: 3}
+  m_PrefabInstance: {fileID: 5406991740125719484}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1695214746
 PrefabInstance:
@@ -12676,6 +12706,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1939886422}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1948353667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7978711374853261245, guid: b16e2a2bfd6d8f349b08478c45961323,
+    type: 3}
+  m_PrefabInstance: {fileID: 4641522481258840665}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1953858181
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14446,7 +14482,7 @@ Transform:
   m_GameObject: {fileID: 3480278762663670689}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.5, y: 1.05, z: -0.5}
+  m_LocalPosition: {x: 2.5, y: 1.05, z: -0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15298,18 +15334,33 @@ MonoBehaviour:
     SerializedTypeNames:
     - VRC.Udon.UdonBehaviour
     - VRC.Udon.UdonBehaviour
-  - gameObject: {fileID: 0}
+  - gameObject: {fileID: 357747194}
     ID: 11
     SerializedTypeNames:
     - VRC.SDK3.Components.VRCPickup
     - VRC.SDK3.Components.VRCObjectSync
-  - gameObject: {fileID: 0}
+  - gameObject: {fileID: 1689307959}
     ID: 12
     SerializedTypeNames:
     - VRC.SDK3.Components.VRCPickup
     - VRC.SDK3.Components.VRCObjectSync
-  - gameObject: {fileID: 0}
+  - gameObject: {fileID: 1073875483}
     ID: 13
+    SerializedTypeNames:
+    - VRC.SDK3.Components.VRCPickup
+    - VRC.SDK3.Components.VRCObjectSync
+  - gameObject: {fileID: 1593885063}
+    ID: 14
+    SerializedTypeNames:
+    - VRC.SDK3.Components.VRCPickup
+    - VRC.SDK3.Components.VRCObjectSync
+  - gameObject: {fileID: 1948353667}
+    ID: 15
+    SerializedTypeNames:
+    - VRC.SDK3.Components.VRCPickup
+    - VRC.SDK3.Components.VRCObjectSync
+  - gameObject: {fileID: 1643730896}
+    ID: 16
     SerializedTypeNames:
     - VRC.SDK3.Components.VRCPickup
     - VRC.SDK3.Components.VRCObjectSync
