@@ -2813,7 +2813,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				#if defined(PROP_FLIPBOOKTEXARRAY) || !defined(OPTIMIZER_ENABLED)
 				float4 flipBookPixel = float4(0, 0, 0, 0);
 				#if defined(PROP_FLIPBOOKMASK) || !defined(OPTIMIZER_ENABLED)
-				float flipBookMask = POI2D_SAMPLER_PAN(_FlipbookMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FlipbookMaskUV*/)], float4(0.5,0.5,0,0)), float4(0,0,0,0))[(0.0 /*_FlipbookMaskChannel*/)];
+				float flipBookMask = POI2D_SAMPLER_PAN(_FlipbookMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FlipbookMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0.0 /*_FlipbookMaskChannel*/)];
 				#else
 				float flipBookMask = 1;
 				#endif
@@ -2936,7 +2936,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				poiFragData.emission += lerp(0, flipBookPixel.rgb * flipbookEmissionStrength, flipBookPixel.a * float4(1,1,1,0.8588235).a * flipBookMask * flipbookAlpha);
 				#endif
 				
-				if ((0.0 /*_FlipbookAlphaControlsFinalAlpha*/))
+				if ((1.0 /*_FlipbookAlphaControlsFinalAlpha*/))
 				{
 					poiFragData.alpha = lerp(poiFragData.alpha, flipBookPixel.a * float4(1,1,1,0.8588235).a, flipBookMask);
 				}
@@ -3035,7 +3035,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				float2 mainUV = poiUV(poiMesh.uv[(0.0 /*_MainTexUV*/)].xy, float4(1,1,0,0));
 				if ((0.0 /*_MainPixelMode*/))
 				{
-					mainUV = sharpSample(float4(0.03125,0.03125,32,32), mainUV);
+					mainUV = sharpSample(float4(1,1,1,1), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), (0.0 /*_MainTexStochastic*/));
 				#if defined(PROP_BUMPMAP) || !defined(OPTIMIZER_ENABLED)
@@ -3405,8 +3405,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				poiLight.lightMapNoAttenuation = poiLight.lightMap;
 				poiLight.lightMap *= lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(1,1,1,0.8588235).rgb, (0.0 /*_ColorThemeIndex*/));
-				poiFragData.alpha = mainTexture.a * float4(1,1,1,0.8588235).a;
+				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0.03820435,0.3094689,0.3094689,0.8588235).rgb, (0.0 /*_ColorThemeIndex*/));
+				poiFragData.alpha = mainTexture.a * float4(0.03820435,0.3094689,0.3094689,0.8588235).a;
 				#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
 				if ((2.0 /*_MainAlphaMaskMode*/))
 				{
@@ -5922,7 +5922,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				#if defined(PROP_FLIPBOOKTEXARRAY) || !defined(OPTIMIZER_ENABLED)
 				float4 flipBookPixel = float4(0, 0, 0, 0);
 				#if defined(PROP_FLIPBOOKMASK) || !defined(OPTIMIZER_ENABLED)
-				float flipBookMask = POI2D_SAMPLER_PAN(_FlipbookMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FlipbookMaskUV*/)], float4(0.5,0.5,0,0)), float4(0,0,0,0))[(0.0 /*_FlipbookMaskChannel*/)];
+				float flipBookMask = POI2D_SAMPLER_PAN(_FlipbookMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FlipbookMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0.0 /*_FlipbookMaskChannel*/)];
 				#else
 				float flipBookMask = 1;
 				#endif
@@ -6045,7 +6045,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				poiFragData.emission += lerp(0, flipBookPixel.rgb * flipbookEmissionStrength, flipBookPixel.a * float4(1,1,1,0.8588235).a * flipBookMask * flipbookAlpha);
 				#endif
 				
-				if ((0.0 /*_FlipbookAlphaControlsFinalAlpha*/))
+				if ((1.0 /*_FlipbookAlphaControlsFinalAlpha*/))
 				{
 					poiFragData.alpha = lerp(poiFragData.alpha, flipBookPixel.a * float4(1,1,1,0.8588235).a, flipBookMask);
 				}
@@ -6144,7 +6144,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				float2 mainUV = poiUV(poiMesh.uv[(0.0 /*_MainTexUV*/)].xy, float4(1,1,0,0));
 				if ((0.0 /*_MainPixelMode*/))
 				{
-					mainUV = sharpSample(float4(0.03125,0.03125,32,32), mainUV);
+					mainUV = sharpSample(float4(1,1,1,1), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), (0.0 /*_MainTexStochastic*/));
 				#if defined(PROP_BUMPMAP) || !defined(OPTIMIZER_ENABLED)
@@ -6514,8 +6514,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				poiLight.lightMapNoAttenuation = poiLight.lightMap;
 				poiLight.lightMap *= lerp(1, poiLight.additiveShadow, poiLight.attenuationStrength);
 				#endif
-				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(1,1,1,0.8588235).rgb, (0.0 /*_ColorThemeIndex*/));
-				poiFragData.alpha = mainTexture.a * float4(1,1,1,0.8588235).a;
+				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0.03820435,0.3094689,0.3094689,0.8588235).rgb, (0.0 /*_ColorThemeIndex*/));
+				poiFragData.alpha = mainTexture.a * float4(0.03820435,0.3094689,0.3094689,0.8588235).a;
 				#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
 				if ((2.0 /*_MainAlphaMaskMode*/))
 				{
@@ -8477,7 +8477,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				#if defined(PROP_FLIPBOOKTEXARRAY) || !defined(OPTIMIZER_ENABLED)
 				float4 flipBookPixel = float4(0, 0, 0, 0);
 				#if defined(PROP_FLIPBOOKMASK) || !defined(OPTIMIZER_ENABLED)
-				float flipBookMask = POI2D_SAMPLER_PAN(_FlipbookMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FlipbookMaskUV*/)], float4(0.5,0.5,0,0)), float4(0,0,0,0))[(0.0 /*_FlipbookMaskChannel*/)];
+				float flipBookMask = POI2D_SAMPLER_PAN(_FlipbookMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FlipbookMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0.0 /*_FlipbookMaskChannel*/)];
 				#else
 				float flipBookMask = 1;
 				#endif
@@ -8600,7 +8600,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				poiFragData.emission += lerp(0, flipBookPixel.rgb * flipbookEmissionStrength, flipBookPixel.a * float4(1,1,1,0.8588235).a * flipBookMask * flipbookAlpha);
 				#endif
 				
-				if ((0.0 /*_FlipbookAlphaControlsFinalAlpha*/))
+				if ((1.0 /*_FlipbookAlphaControlsFinalAlpha*/))
 				{
 					poiFragData.alpha = lerp(poiFragData.alpha, flipBookPixel.a * float4(1,1,1,0.8588235).a, flipBookMask);
 				}
@@ -8699,7 +8699,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				float2 mainUV = poiUV(poiMesh.uv[(0.0 /*_MainTexUV*/)].xy, float4(1,1,0,0));
 				if ((0.0 /*_MainPixelMode*/))
 				{
-					mainUV = sharpSample(float4(0.03125,0.03125,32,32), mainUV);
+					mainUV = sharpSample(float4(1,1,1,1), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), (0.0 /*_MainTexStochastic*/));
 				#if defined(PROP_BUMPMAP) || !defined(OPTIMIZER_ENABLED)
@@ -8739,8 +8739,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				poiCam.vDotN = abs(dot(poiCam.viewDir, poiMesh.normals[1]));
 				poiCam.worldDirection.xyz = poiMesh.worldPos.xyz - poiCam.worldPos;
 				poiCam.worldDirection.w = dot(poiCam.clipPos, CalculateFrustumCorrection());
-				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(1,1,1,0.8588235).rgb, (0.0 /*_ColorThemeIndex*/));
-				poiFragData.alpha = mainTexture.a * float4(1,1,1,0.8588235).a;
+				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0.03820435,0.3094689,0.3094689,0.8588235).rgb, (0.0 /*_ColorThemeIndex*/));
+				poiFragData.alpha = mainTexture.a * float4(0.03820435,0.3094689,0.3094689,0.8588235).a;
 				#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
 				if ((2.0 /*_MainAlphaMaskMode*/))
 				{
@@ -10991,7 +10991,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				#if defined(PROP_FLIPBOOKTEXARRAY) || !defined(OPTIMIZER_ENABLED)
 				float4 flipBookPixel = float4(0, 0, 0, 0);
 				#if defined(PROP_FLIPBOOKMASK) || !defined(OPTIMIZER_ENABLED)
-				float flipBookMask = POI2D_SAMPLER_PAN(_FlipbookMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FlipbookMaskUV*/)], float4(0.5,0.5,0,0)), float4(0,0,0,0))[(0.0 /*_FlipbookMaskChannel*/)];
+				float flipBookMask = POI2D_SAMPLER_PAN(_FlipbookMask, _MainTex, poiUV(poiMesh.uv[(0.0 /*_FlipbookMaskUV*/)], float4(1,1,0,0)), float4(0,0,0,0))[(0.0 /*_FlipbookMaskChannel*/)];
 				#else
 				float flipBookMask = 1;
 				#endif
@@ -11114,7 +11114,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				poiFragData.emission += lerp(0, flipBookPixel.rgb * flipbookEmissionStrength, flipBookPixel.a * float4(1,1,1,0.8588235).a * flipBookMask * flipbookAlpha);
 				#endif
 				
-				if ((0.0 /*_FlipbookAlphaControlsFinalAlpha*/))
+				if ((1.0 /*_FlipbookAlphaControlsFinalAlpha*/))
 				{
 					poiFragData.alpha = lerp(poiFragData.alpha, flipBookPixel.a * float4(1,1,1,0.8588235).a, flipBookMask);
 				}
@@ -11213,7 +11213,7 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				float2 mainUV = poiUV(poiMesh.uv[(0.0 /*_MainTexUV*/)].xy, float4(1,1,0,0));
 				if ((0.0 /*_MainPixelMode*/))
 				{
-					mainUV = sharpSample(float4(0.03125,0.03125,32,32), mainUV);
+					mainUV = sharpSample(float4(1,1,1,1), mainUV);
 				}
 				float4 mainTexture = POI2D_SAMPLER_PAN_STOCHASTIC(_MainTex, _MainTex, mainUV, float4(0,0,0,0), (0.0 /*_MainTexStochastic*/));
 				#if defined(PROP_BUMPMAP) || !defined(OPTIMIZER_ENABLED)
@@ -11254,8 +11254,8 @@ Shader "Hidden/Locked/.poiyomi/Poiyomi Toon World/3c53a939408b1c3438ae485087a572
 				poiCam.worldDirection.xyz = poiMesh.worldPos.xyz - poiCam.worldPos;
 				poiCam.worldDirection.w = dot(poiCam.clipPos, CalculateFrustumCorrection());
 				calculateGlobalThemes(poiMods);
-				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(1,1,1,0.8588235).rgb, (0.0 /*_ColorThemeIndex*/));
-				poiFragData.alpha = mainTexture.a * float4(1,1,1,0.8588235).a;
+				poiFragData.baseColor = mainTexture.rgb * poiThemeColor(poiMods, float4(0.03820435,0.3094689,0.3094689,0.8588235).rgb, (0.0 /*_ColorThemeIndex*/));
+				poiFragData.alpha = mainTexture.a * float4(0.03820435,0.3094689,0.3094689,0.8588235).a;
 				#if defined(PROP_ALPHAMASK) || !defined(OPTIMIZER_ENABLED)
 				if ((2.0 /*_MainAlphaMaskMode*/))
 				{

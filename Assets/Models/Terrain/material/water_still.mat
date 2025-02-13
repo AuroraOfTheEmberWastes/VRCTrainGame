@@ -68,7 +68,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 28637ce140ed711488e1bb097f0acb5f, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: []
@@ -867,7 +867,7 @@ Material:
     - _FXProximityColorMinDistance: 0
     - _FXProximityColorType: 1
     - _FlipBackfaceNormals: 1
-    - _FlipbookAlphaControlsFinalAlpha: 0
+    - _FlipbookAlphaControlsFinalAlpha: 1
     - _FlipbookBlendType: 0
     - _FlipbookChronoType: 0
     - _FlipbookChronotensityBand: 0
@@ -2352,7 +2352,7 @@ Material:
     - m_lightingCategory: 0
     - m_mainCategory: 1
     - m_modifierCategory: 0
-    - m_renderingCategory: 0
+    - m_renderingCategory: 1
     - m_specialFXCategory: 1
     - m_start_ALDecalSpectrum: 0
     - m_start_ALVolumeColor: 0
@@ -2381,7 +2381,7 @@ Material:
     - m_start_FXProximityColor: 0
     - m_start_FlipbookAudioLink: 0
     - m_start_Gameboy: 0
-    - m_start_GlobalMask: 0
+    - m_start_GlobalMask: 1
     - m_start_GlobalMaskDistanceM_0: 0
     - m_start_GlobalMaskDistanceM_1: 0
     - m_start_GlobalMaskDistanceM_10: 0
@@ -2410,7 +2410,7 @@ Material:
     - m_start_GlobalThemeColor1: 0
     - m_start_GlobalThemeColor2: 0
     - m_start_GlobalThemeColor3: 0
-    - m_start_GlobalThemes: 0
+    - m_start_GlobalThemes: 1
     - m_start_LTCGI: 0
     - m_start_MainVertexColors: 0
     - m_start_Matcap2: 0
@@ -2424,9 +2424,9 @@ Material:
     - m_start_PathAudioLink: 0
     - m_start_PoiGlobalCategory: 0
     - m_start_PoiLightData: 0
-    - m_start_PoiPostProcessingCategory: 0
+    - m_start_PoiPostProcessingCategory: 1
     - m_start_PoiShading: 0
-    - m_start_PoiUVCategory: 0
+    - m_start_PoiUVCategory: 1
     - m_start_RGBMask: 0
     - m_start_Rim2AudioLink: 0
     - m_start_RimAudioLink: 0
@@ -2493,7 +2493,7 @@ Material:
     - m_start_videoEffects: 0
     - m_start_voronoi: 0
     - m_start_voronoiRandom: 0
-    - m_thirdpartyCategory: 0
+    - m_thirdpartyCategory: 1
     - s_end_ALAlpha: 0
     - s_end_ALSpectrumMotion: 0
     - s_end_ALVertexGlitching: 0
@@ -2766,7 +2766,7 @@ Material:
     - s_start_FixedRimBlending: 1
     - s_start_FixedRimColor: 1
     - s_start_FixedRimShapeControl: 1
-    - s_start_FlipBookAdvanced: 0
+    - s_start_FlipBookAdvanced: 1
     - s_start_FlipbookCrossfade: 0
     - s_start_FlipbookHueShift: 0
     - s_start_FlipbookManualFrameControl: 0
@@ -2992,7 +2992,7 @@ Material:
     - _ClearCoatReflectionTint: {r: 1, g: 1, b: 1, a: 1}
     - _ClearCoatSpecularTint: {r: 1, g: 1, b: 1, a: 1}
     - _ClothMetallicSmoothnessMapPan: {r: 0, g: 0, b: 0, a: 0}
-    - _Color: {r: 1, g: 1, b: 1, a: 0.85882354}
+    - _Color: {r: 0.21568628, g: 0.5921569, b: 0.5921569, a: 0.85882354}
     - _CubeMapColor: {r: 1, g: 1, b: 1, a: 1}
     - _CubeMapMaskPan: {r: 0, g: 0, b: 0, a: 0}
     - _CubeMapRotation: {r: 0, g: 0, b: 0, a: 0}
