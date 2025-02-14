@@ -146,7 +146,7 @@ GameObject:
   - component: {fileID: 7976119566340157624}
   - component: {fileID: 2008970541059833234}
   - component: {fileID: 4662076444230260685}
-  - component: {fileID: 6313996996554309980}
+  - component: {fileID: 2070639410952873970}
   m_Layer: 0
   m_Name: Meter Sign
   m_TagString: Untagged
@@ -222,8 +222,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6313996996554309980
-MeshCollider:
+--- !u!65 &2070639410952873970
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -240,10 +240,9 @@ MeshCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 8076890130576784169, guid: 5d2fff2cc71956b468257598d49d8e37, type: 3}
+  serializedVersion: 3
+  m_Size: {x: 0.29999998, y: 0.4087705, z: 0.06999999}
+  m_Center: {x: -7.958078e-15, y: 0.20438525, z: 0.017499998}
 --- !u!1 &7225417034757997624
 GameObject:
   m_ObjectHideFlags: 0
